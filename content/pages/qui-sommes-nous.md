@@ -4,7 +4,7 @@ Authors: libraisol
 Summary: Présentation de l'association
 
 LIBRAISOL (**L**ibre **A**ssociation **I**nformatique **S**olidaire Linux) est une association régie par la loi du 1er juillet 1901 et le décret du 16 août 1901.
-Vous pouvez consulter [ici](../doc/statuts-libraisol.pdf) nos statuts et [là](../doc/RI-libraisol.pdf) notre règlement intérieur.
+Vous pouvez consulter, en ligne, [nos statuts](../doc/statuts-libraisol.pdf) et notre [règlement intérieur](../doc/RI-libraisol.pdf).
 
 Notre association a deux buts principaux (extraits de nos statuts) :
 
@@ -23,3 +23,15 @@ Voici quelques exemples d'actions possibles :
 
 Des permanences (voir ci-dessous) sont proposées régulièrement au public.
 C'est un moment propice aux échanges pendant lequel vous pourrez vous initier aux logiciels libres et aux bonnes pratiques d'hygiène numérique.
+
+### Comment nous soutenir ?
+Vous pouvez nous soutenir en adhérant à l'association.
+Le bulletin d'adhésion peut être apporté lors de nos permanences ou réunions (voir le pied de page) ou envoyé à notre adresse de contact (voir le mail dans le pied de page).
+
+Que vous soyez un particulier ou une organisation, vous pouvez soutenir notre action en amenant les ordinateurs dont vous n'avez plus l'usage à la [Recyclerie][recyclerie] ou à notre local (voir l'adresse en pied de page).
+Nous invitons les entreprises, institutions, associations qui renouvellent leur parc informatique à nous contacter directement (voir le mail dans le pied de page).
+
+> Nous avons signé une convention avec la [Recyclerie de Cusset][recyclerie], qui nous permet de remettre en état une partie du matériel collecté, d’effacer les données présentes, puis d’installer le système d’exploitation [libre] GNU/Linux (avec une suite logicielle et son paramétrage). Contrairement aux systèmes d’exploitation propriétaires (type Windows ou MacOS…), les mises à jour de systèmes d’exploitation GNU/Linux ne nécessitent pas de matériel de plus en plus puissant.
+
+[recyclerie]: https://recycleriesiel.com/
+[libre]: pages/logiciel-libre.html
