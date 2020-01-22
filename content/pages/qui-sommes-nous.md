@@ -9,7 +9,7 @@ Vous pouvez consulter, en ligne, [nos statuts](../doc/statuts-libraisol.pdf) et 
 Notre association a deux buts principaux (extraits de nos statuts) :
 
 1. Former et équiper des populations en difficulté ou défavorisées pour permettre l'accès à l’informatique et à Internet à tous.
-2. Permettre à qui le souhaite, d'explorer et d'utiliser des systèmes d’exploitation informatiques non-propriétaires pour s’équiper en systèmes GNU, Linux, et en logiciels dits "libres"
+2. Permettre à qui le souhaite, d'explorer et d'utiliser des systèmes d’exploitation informatiques non-propriétaires pour s’équiper en systèmes GNU, Linux, et en logiciels dits ["libres"][libre].
 
 Voici quelques exemples d'actions possibles :
 
@@ -34,4 +34,4 @@ Nous invitons les entreprises, institutions, associations qui renouvellent leur 
 > Nous avons signé une convention avec la [Recyclerie de Cusset][recyclerie], qui nous permet de remettre en état une partie du matériel collecté, d’effacer les données présentes, puis d’installer le système d’exploitation [libre] GNU/Linux (avec une suite logicielle et son paramétrage). Contrairement aux systèmes d’exploitation propriétaires (type Windows ou MacOS…), les mises à jour de systèmes d’exploitation GNU/Linux ne nécessitent pas de matériel de plus en plus puissant.
 
 [recyclerie]: https://recycleriesiel.com/
-[libre]: pages/logiciel-libre.html
+[libre]: logiciel-libre.html
