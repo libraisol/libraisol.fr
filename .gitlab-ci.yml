@@ -1,8 +1,10 @@
 image: python:3-alpine
 
+variables:
+  LC_ALL: "fr_FR.UTF-8"
+  LANG: "fr_FR.UTF-8"
 pages:
   script:
-  - locale-gen fr_FR.UTF-8
   - pip install -r requirements.txt
   - pelican -s publishconf.py
   - locale
