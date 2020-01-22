@@ -24,4 +24,19 @@ Imaginez que vous vous trouviez dans un restaurant et que vous mangiez un excell
 C'est impossible, car vous n'avez pas la recette du plat. Vous pouvez toujours le manger dans le restaurant, mais même si vous connaissez le goût, vous ne savez pas comment le reproduire.
 En informatique, c'est la même chose avec un logiciel. La plupart des logiciels sont distribués sans leur recette, et il est interdit d'essayer de comprendre leur fonctionnement (on parle dans ce cas d'un logiciel propriétaire). Il est interdit de les partager avec vos amis, et il est interdit d'essayer de les modifier pour les adapter à vos besoins.
 
+### Open source
+Une définition précise de ce que signifie Open source a été rédigée par l’OSI ([Open Source Initiative][osi]). Elle est aujourd’hui reconnue de manière universelle. Cette définition comporte dix points. Les principaux sont les 3 premiers qui composent cette définition :
+
+* **libre redistribution** : la licence ne doit pas interdire à qui que ce soit de vendre ou donner le programme ;
+* **code source** :  la licence  doit  permettre  la  distribution du  logiciel  sous forme  de code source.  Si  celui-ci n’accompagne pas le programme, il doit être disponible de manière facile et gratuite ;
+* **travaux dérivés** : la licence doit permettre des modifications et des travaux dérivés. Ces travaux doivent pouvoir  être  distribués  sous  les  mêmes  termes  de  licence  que  le  logiciel  original.  La  licence  doit  au minimum  permettre  de  redistribuer  les  travaux  dérivés  sous  la  même  licence.  Elle  ne  doit  pas nécessairement l’obliger.
+
+
+> Le système Windows 7 [n’est plus pris en charge][win7] par Microsoft depuis le 14 janvier 2020.
+> L'association LiBRAiSOL invite à ne pas jeter les ordinateurs qui ne supporteraient pas une version plus récente de Windows et de rejoindre l'association pour basculer sur un système d'exploitation libre, sécurisé et facile à prendre en main.
+> Un système d'exploitation [GNU/Linux][gnu], ne provoque pas l'obsolescence des ordinateurs et permet un "recyclage" (réutilisation) qui réduit l’empreinte écologique du matériel informatique. Il est facile à prendre en main, sécurisé et performant et permet de se libérer de l'emprise de multinationales (GAFAM, BATX, etc...) et de leur captation d'informations utilisées a des fins commerciales.
+
 [ll]: https://www.april.org/articles/intro/ll.html
+[osi]: https://opensource.org
+[win7]: https://support.microsoft.com/fr-fr/help/4057281/windows-7-support-will-end-on-january-14-2020
+[gnu]: http://www.gnu.org/gnu/linux-and-gnu.html
