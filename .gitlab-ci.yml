@@ -7,7 +7,6 @@ pages:
   script:
   - pip install -r requirements.txt
   - pelican -s publishconf.py
-  - locale
   artifacts:
     paths:
     - public/
