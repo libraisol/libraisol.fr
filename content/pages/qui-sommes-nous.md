@@ -9,11 +9,11 @@ Vous pouvez consulter, en ligne, [nos statuts](../doc/statuts-libraisol.pdf) et 
 Notre association a deux buts principaux (extraits de nos statuts) :
 
 1. Former et équiper des populations en difficulté ou défavorisées pour permettre l'accès à l’informatique et à Internet à tous.
-2. Permettre à qui le souhaite, d'explorer et d'utiliser des systèmes d’exploitation informatiques non-propriétaires pour s’équiper en systèmes GNU, Linux, et en logiciels dits ["libres"][libre].
+2. Permettre à qui le souhaite, d'explorer et d'utiliser des systèmes d’exploitation informatiques non-propriétaires pour s’équiper en systèmes GNU/Linux, et en logiciels dits ["libres"][libre].
 
 Voici quelques exemples d'actions possibles :
 
-* Initier aux logiciels libres et aux distributions GNU ou Linux
+* Initier aux logiciels libres et aux distributions GNU/Linux
 * Favoriser l’utilisation des logiciels libres
 * Permettre l’utilisation de matériels informatiques interfaces homme-machine, unités centrales, écrans, ordinateurs complets, etc...) , dans le respect du cadre fixé par Libraisol
 * Faciliter l’accès à Internet à tous
