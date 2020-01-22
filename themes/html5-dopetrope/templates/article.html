@@ -10,7 +10,7 @@
                             {% endif %}
 								<header>
 									<h2>{{ article.title }}</h2>
-                                    <p>{{ article.locale_date }}</p>
+                                    <p>{{ article.date|strftime('%d %B %Y') }}</p>
 								</header>
                                 {{ article.content }}
 							</article>

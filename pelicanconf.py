@@ -38,8 +38,7 @@ DEFAULT_PAGINATION = False
 
 # personnalisation
 THEME = 'themes/html5-dopetrope'
-
-DEFAULT_DATE_FORMAT = ('%d %B %Y')
+STATIC_PATHS = ( "doc/", )
 
 LIBRE = 'Permettre à qui le souhaite, d\'explorer et d\'utiliser des systèmes d’exploitation informatiques non-propriétaires pour s’équiper en systèmes GNU, Linux, et en logiciels dits "libres".'
 SOLIDAIRE = 'Former et équiper des populations en difficulté ou défavorisées pour permettre l\'accès à l\'informatique et à Internet à tous.'
@@ -57,4 +56,3 @@ COPYRIGHT = 'Libraisol. Tous droits réservés'
 PARTNERS = (('Vichy Communauté', 'https://www.vichy-communaute.fr/'),
             ('La recyclerie', 'https://recycleriesiel.com/'),
             ('L\'Étincelle', 'https://etincelle.io/'),)
-STATIC_PATHS = ( "doc/", )
