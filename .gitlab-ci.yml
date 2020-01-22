@@ -2,9 +2,10 @@ image: python:3-alpine
 
 pages:
   script:
+  - locale-gen fr_FR.UTF-8
   - pip install -r requirements.txt
   - pelican -s publishconf.py
-  - date
+  - locale
   artifacts:
     paths:
     - public/
