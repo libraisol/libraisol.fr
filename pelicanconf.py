@@ -52,7 +52,8 @@ ABOUT_LINK = 'pages/qui-sommes-nous.html'
 PERMANENCE = 'Les jeudi de 14H à 18H, dans la salle informatique de l’étincelle'
 ADDRESS = 'Atrium<br/>37 avenue de Gramont<br/>03200 Vichy'
 MAIL = 'libraisol@zaclys.com'
-COPYRIGHT = 'Libraisol. Sauf mention contraire, contenu disponible sous licence <a href="https://creativecommons.org/licenses/by-sa/3.0/fr/" target="_blank">CC-BY-SA version 3.0 ou ultérieure</a>'
+COPYRIGHT = 'Libraisol. Sauf mention contraire, le contenu est disponible sous licence <a href="https://creativecommons.org/licenses/by-sa/3.0/fr/" target="_blank">CC-BY-SA version 3.0 ou ultérieure</a>'
+CODE = '<i class="icon brands fa-gitlab" aria-hidden="true"></i> Hébergé sur <a href="https://framagit.org/libraisol/www.libraisol.fr" target="_blank">Framagit</a>'
 PARTNERS = (('Vichy Communauté', 'https://www.vichy-communaute.fr/'),
             ('La recyclerie', 'https://recycleriesiel.com/'),
             ('L\'Étincelle', 'https://etincelle.io/'),)
