@@ -4,6 +4,7 @@ pages:
   script:
   - pip install -r requirements.txt
   - pelican -s publishconf.py
+  - date
   artifacts:
     paths:
     - public/
