@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block banner %}
+					<!-- Banner -->
+						<section id="banner">
+							<header>
+								<h2>Libre Association Informatique Solidaire</h2>
+								<p>Linux</p>
+							</header>
+						</section>
+{% endblock banner %}
+
+{% block intro %}
+					<!-- Intro -->
+						<section id="intro" class="container">
+							<div class="row">
+								<div class="col-4 col-12-medium">
+									<section class="first">
+										<i class="icon solid featured"><img src="/theme/images/gnu.png" alt="GNU Logo"/></i>
+										<header>
+											<h2>Libre</h2>
+										</header>
+                                        {% if LIBRE is defined %}
+                                        <p>{{ LIBRE }}</p>
+                                        {% else %}
+										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                                        {% endif %}
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="middle">
+										<i class="icon solid featured alt fa-users"></i>
+										<header>
+											<h2>Solidaire</h2>
+										</header>
+                                        {% if SOLIDAIRE is defined %}
+                                        <p>{{ SOLIDAIRE }}</p>
+                                        {% else %}
+										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                                        {% endif %}
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="last">
+										<i class="icon solid featured alt2 fa-cog"></i>
+										<header>
+											<h2>Association</h2>
+										</header>
+                                        {% if ASSOCIATION is defined %}
+                                        <p>
+                                            {{ ASSOCIATION }}
+                                            <a href="#footer">(voir qui sommes-nous)</a>.
+                                        </p>
+                                        {% else %}
+										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                                        {% endif %}
+									</section>
+								</div>
+							</div>
+							<footer>
+								<ul class="actions">
+                                    {% if LIBRE_LINK and LIBRE_LAB %}
+                                    <li><a href="{{ SITEURL }}/{{ LIBRE_LINK }}" class="button large">{{ LIBRE_LAB }}</a></li>
+                                    {% else %}
+									<li><a href="#" class="button large">Get Started</a></li>
+                                    {% endif %}
+                                    {% if SOLIDAIRE_LINK and SOLIDAIRE_LAB %}
+                                    <li><a href="{{ SITEURL }}/{{ SOLIDAIRE_LINK }}" class="button alt large">{{ SOLIDAIRE_LAB }}</a></li>
+                                    {% else %}
+									<li><a href="#" class="button alt large">Learn More</a></li>
+                                    {% endif %}
+								</ul>
+							</footer>
+						</section>
+{% endblock intro %}
+
+{% block content %}
+						<div class="row">
+							<div class="col-12">
+                            {% if BLOG is defined %}
+								<!-- Blog -->
+									<section>
+										<header class="major">
+											<h2>Articles du Blog</h2>
+										</header>
+                                    {% for article in articles_page.object_list %}
+                                        {% if loop.index0 % 3  == 0 %}
+										<div class="row">
+                                            {% endif %}
+											<div class="col-6 col-12-small">
+												<section class="box">
+                                                {% if article.picture is defined %}
+													<a href="{{ SITEURL }}/{{ article.url }}" class="image featured"><img src="{{ SITEURL }}/{{ article.picture }}" alt="" /></a>
+                                                {% endif %}
+													<header>
+														<h3>{{article.title }}</h3>
+														<p>{{ article.date }}</p>
+													</header>
+													{{ article.summary }}
+													<footer>
+														<ul class="actions">
+															<li><a href="{{ SITEURL }}/{{ article.url }}" class="button icon solid fa-file-alt">Lire la suite</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+                                        {% if loop.index % 3  == 0 %}
+										</div>
+                                        {% endif %}
+                                    {% endfor %}
+									</section>
+                            {% endif %}
+							</div>
+						</div>
+{% endblock content %}

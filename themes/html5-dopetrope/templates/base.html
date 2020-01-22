@@ -1,0 +1,238 @@
+
+<!DOCTYPE HTML>
+<!--
+	Dopetrope 2.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+        {% endif %}
+        {% if FEED_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_ATOM and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_RSS and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+        {% endif %}
+        {% if TAG_FEED_ATOM and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+        {% endif %}
+        {% if TAG_FEED_RSS and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+        {% endif %}
+        
+        <link rel="stylesheet" href="/theme/css/main.css" />
+    {% endblock head %}
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+
+					<!-- Nav -->
+                        {% if NAV is defined %}
+						<nav id="nav">
+                            <ul>
+                                {% for title, link in MENUITEMS %}
+                                        <li><a href="{{ link }}">{{ title }}</a></li>
+                                {% endfor %}
+                                {% if DISPLAY_PAGES_ON_MENU %}
+                                    {% for p in pages %}
+                                        <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                                    {% endfor %}
+                                {% else %}
+                                    {% if DISPLAY_CATEGORIES_ON_MENU %}
+                                        {% for cat, null in categories %}
+                                            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endif %}
+                            </ul>
+						</nav>
+                        {% endif %}
+
+					{% block banner %}
+					{% endblock %}
+
+					{% block intro %}
+					{% endblock %}
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+					{% block content %}
+					{% endblock %}
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								<section>
+									<header>
+										<h2>Agenda</h2>
+									</header>
+									<ul class="dates">
+									{% for article in articles[0:4] %}
+										<li>
+											<span class="date">{{ article.date|strftime('%b') }} <strong>{{ article.date|strftime('%d') }}</strong></span>
+											<h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+											{{ article.summary }}
+										</li>
+									{% endfor %}
+									</ul>
+								</section>
+							</div>
+                            {% if ABOUT_TEXT is defined or ABOUT_IMAGE is defined or ABOUT_LINK is defined %}
+							<div class="col-4 col-12-medium">
+                                <section>
+                                    <header>
+                                        <h2>Qui sommes-nous ?</h2>
+                                    </header>
+                                    {% if ABOUT_LINK and ABOUT_IMAGE %}
+                                        <a href="{{ ABOUT_LINK }}" class="image featured"><img src="{{ SITEURL }}/{{ ABOUT_IMAGE }}" alt="" /></a>
+                                    {% elif ABOUT_IMAGE is defined %}
+                                        <img src="{{ SITEURL }}/{{ ABOUT_IMAGE }}" class="image featured" alt="" />
+                                    {% endif %}
+                                    <p>
+                                    {{ ABOUT_TEXT }}
+                                    </p>
+                                    <footer>
+                                        <ul class="actions">
+                                        {% if ABOUT_LINK is defined %}
+                                            <li><a href="{{ SITEURL }}/{{ ABOUT_LINK }}" class="button">À propos</a></li>
+                                        {% endif %}
+                                        </ul>
+                                    </footer>
+                                </section>
+							</div>
+                            {% endif %}
+                            {% if LINKS is defined %}
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Liens</h2>
+									</header>
+									<ul class="divided">
+                                    {% for name, link in LINKS %}
+                                        <li><a href="{{ link }}">{{ name }}</a></li>
+                                    {% endfor %}
+									</ul>
+								</section>
+							</div>
+                            {% endif %}
+                            {% if PARTNERS is defined %}
+							<div class="col-4 col-6-medium col-12-small">
+								<section>
+									<header>
+										<h2>Partenaires</h2>
+									</header>
+									<ul class="divided">
+                                    {% for name, link in PARTNERS %}
+                                        <li><a href="{{ link }}">{{ name }}</a></li>
+                                    {% endfor %}
+									</ul>
+								</section>
+							</div>
+                            {% endif %}
+							<div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>Contact</h2>
+									</header>
+                                    {% if SOCIAL is defined %}
+									<ul class="social">
+                                        {% if MASTODON_URL %}
+										<li><a class="icon brands fa-mastodon" href="{{ MASTODON_URL }}"><span class="label">Facebook</span></a></li>
+                                        {% endif %}
+                                        {% if FACEBOOK_USER %}
+										<li><a class="icon brands fa-facebook-f" href="https://www.facebook.com/{{ FACEBOOK_USER }}"><span class="label">Facebook</span></a></li>
+                                        {% endif %}
+                                        {% if TWITTER_USER is defined %}
+										<li><a class="icon brands fa-twitter" href="http://twitter.com/{{ TWITTER_USER }}"><span class="label">Twitter</span></a></li>
+                                        {% endif %}
+                                        {% if DRIBBBLE_USER %}
+										<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+                                        {% endif %}
+                                        {% if TUMBLR_USER %}
+										<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
+                                        {% endif %}
+                                        {% if LINKEDIN_USER %}
+										<li><a class="icon brands fa-linkedin-in" href="http://www.linkedin.com/pub/{{ LINKEDIN_USER }}"><span class="label">LinkedIn</span></a></li>
+                                        {% endif %}
+									</ul>
+                                    {% endif %}
+                                    {% if ADDRESS is defined or MAIL is defined or PHONE is defined %}
+									<ul class="contact">
+                                        {% if PERMANENCE is defined %}
+                                        <li>
+                                            <h3>Permanence</h3>
+                                            <p>
+                                                {{ PERMANENCE }}
+                                            </p>
+                                        </li>
+                                        {% endif %}
+                                        {% if ADDRESS is defined %}
+                                        <li>
+                                            <h3>Adresse</h3>
+                                            <p>
+                                                {{ ADDRESS }}
+                                            </p>
+                                        </li>
+                                        {% endif %}
+                                        {% if MAIL is defined %}
+                                        <li>
+                                            <h3>Mail</h3>
+                                            <p><img src="/theme/images/mail.jpg" alt="E-mail"/></p>
+                                        </li>
+                                        {% endif %}
+                                        {% if PHONE %}
+                                        <li>
+                                            <h3>Phone</h3>
+                                            <p>{{ PHONE }}</p>
+                                        </li>
+                                        {% endif %}
+									</ul>
+                                    {% endif %}
+								</section>
+							</div>
+							<div class="col-12">
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; {{ COPYRIGHT }}	</li>
+                                            <li>Généré avec: <a href="https://blog.getpelican.com/">Pelican</a></li>
+											<li>Habillage: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+
+	</body>
+</html>

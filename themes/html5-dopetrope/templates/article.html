@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+						<!-- Content -->
+							<article class="box post">
+                            {% if article.picture is defined %}
+                                <a href="{{ article.picturecopyrights }}" class="image featured">
+                                    <img src="{{ SITEURL }}/{{ article.picture }}"/>
+                                    {{ article.picturecopyrights }}
+                                </a>
+                            {% endif %}
+								<header>
+									<h2>{{ article.title }}</h2>
+                                    <p>{{ article.locale_date }}</p>
+								</header>
+                                {{ article.content }}
+							</article>
+                            {% include 'disqus_script.html' %}
+                            <div align="center">
+                                <ul class="actions">
+                                    <li><a href="{{ SITEURL }}/index.html" class="button large">
+                                        <span class="fa fa-arrow-left"></span>
+                                        Retour
+                                    </a></li>
+								</ul>
+                            </div>
+{% endblock %}
