@@ -8,6 +8,7 @@ qui ne les placent pas sous la domination d'un éditeur de logiciels,
 qui se trouve généralement être une multinationale des états-unis qui pratique l'optimisation fiscale en Europe.
 
 On résume généralement le logiciel libre a ses quatre libertés :
+
 * la liberté d'utiliser le logiciel, pour quelque usage que ce soit (liberté 0);
 * la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos propres besoins (liberté 1). L'accès au code source est une condition pour tout ceci;
 * la liberté de redistribuer des copies de façon à pouvoir aider votre voisin (liberté 2);
