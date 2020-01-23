@@ -33,7 +33,7 @@ Une définition précise de ce que signifie Open source a été rédigée par l�
 
 
 > Le système Windows 7 [n’est plus pris en charge][win7] par Microsoft depuis le 14 janvier 2020.
-> L'association LiBRAiSOL invite à ne pas jeter les ordinateurs qui ne supporteraient pas une version plus récente de Windows et de rejoindre l'association pour basculer sur un système d'exploitation libre, sécurisé et facile à prendre en main.
+> L'association LIBRaiSOL invite à ne pas jeter les ordinateurs qui ne supporteraient pas une version plus récente de Windows et de rejoindre l'association pour basculer sur un système d'exploitation libre, sécurisé et facile à prendre en main.
 > Un système d'exploitation [GNU/Linux][gnu], ne provoque pas l'obsolescence des ordinateurs et permet un "recyclage" (réutilisation) qui réduit l’empreinte écologique du matériel informatique. Il est facile à prendre en main, sécurisé et performant et permet de se libérer de l'emprise de multinationales (GAFAM, BATX, etc...) et de leur captation d'informations utilisées a des fins commerciales.
 
 [ll]: https://www.april.org/articles/intro/ll.html

@@ -1,4 +1,4 @@
-# Site vitrine de l'association LIBRAISOL
+# Site vitrine de l'association LIBRaiSOL
 
 Le thème est adapté du thème *html5-dopetrope* disponible sous la [licence] CCA 3.0 sur **html5up.net**.
 
