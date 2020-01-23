@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'libraisol'
-SITENAME = 'LIBRAISOL'
+SITENAME = 'LIBRaiSOL'
 SITEURL = ''
 
 PATH = 'content'
