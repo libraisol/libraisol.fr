@@ -1,7 +1,6 @@
 image: python:3-alpine
 
 variables:
-  LC_ALL: "fr_FR.UTF-8"
   LANG: "fr_FR.UTF-8"
 pages:
   script:
