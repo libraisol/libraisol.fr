@@ -57,3 +57,4 @@ CODE = '<i class="icon brands fa-gitlab" aria-hidden="true"></i> Hébergé sur <
 PARTNERS = (('Vichy Communauté', 'https://www.vichy-communaute.fr/'),
             ('La recyclerie', 'https://recycleriesiel.com/'),
             ('L\'Étincelle', 'https://etincelle.io/'),)
+LOCALE = ('fr_FR.utf8', )
