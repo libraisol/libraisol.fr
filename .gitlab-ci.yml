@@ -2,9 +2,9 @@ image: debian:latest
 
 pages:
   script:
-  - apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
-    && localedef -i fr_FR -c -f UTF-8 -A /usr/share/locale/locale.alias fr_FR.UTF-8 \
-    && apt-get update && apt-get install -y pelican apache2
+  - apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/*
+  - localedef -i fr_FR -c -f UTF-8 -A /usr/share/locale/locale.alias fr_FR.UTF-8
+  - apt-get update && apt-get install -y pelican
   - pelican -s publishconf.py
   artifacts:
     paths:
