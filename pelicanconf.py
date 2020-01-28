@@ -22,7 +22,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('April', 'https://www.april.org/'),
-         ('Framasoft', 'https://www.april.org/'),
+         ('Framasoft', 'https://framasoft.org/'),
          ('ATTAC Bassin de Vichy', 'https://local.attac.org/vichy/'),)
 
 # Social widget
@@ -56,5 +56,6 @@ COPYRIGHT = 'Libraisol. Sauf mention contraire, le contenu est disponible sous l
 CODE = '<i class="icon brands fa-gitlab" aria-hidden="true"></i> Hébergé sur <a href="https://framagit.org/libraisol/www.libraisol.fr" target="_blank">Framagit</a>'
 PARTNERS = (('Vichy Communauté', 'https://www.vichy-communaute.fr/'),
             ('La recyclerie', 'https://recycleriesiel.com/'),
-            ('L\'Étincelle', 'https://etincelle.io/'),)
+            ('L\'Étincelle', 'https://etincelle.io/'),
+            ('Fondation Orange', 'https://www.fondationorange.com/'),)
 LOCALE = ('fr_FR.utf8', )
