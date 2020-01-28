@@ -43,11 +43,14 @@ docker run -d -p 80:80 debian-pelican
 Le site est alors disponible à l'adresse `http://localhost`.
 
 ## License
-
-En dehors du thème CSS *html5-dopetrope* et de l'image de bannière, qui est disponible sous la [licence] CCA 3.0,
-ce dépôt git et tous les fichiers contenus sont publiés librement sous les termes de la [licence MIT][mit] (voir le fichier `LICENSE`).
-Les fichiers *template* ont été adaptés à partir du [travail][PierrePaul] de Pierre Paul Lefebvre.
+* Les fichiers thème CSS *html5-dopetrope* et l'image de bannière sont disponibles sous la [licence] CCA 3.0.
+* Les polices de caractères sont disponibles sous la [licence SIL Open Font License][sil].
+* Les fichiers *template* ont été adaptés à partir du [travail][PierrePaul] de Pierre Paul Lefebvre.
+Ils sont disponibles sous la [licence Creative Commons Attribution 3.0 Unported][ccby].
+* Sauf mention contraire, le contenu est disponible sous [licence CC-BY-SA][ccbysa] version 3.0 ou ultérieure.
 
 [licence]: https://html5up.net/license
-[mit]: https://mit-license.org/
+[sil]: https://opensource.org/licenses/OFL-1.1
+[ccby]: http://creativecommons.org/licenses/by/3.0/
 [PierrePaul]: https://github.com/PierrePaul/html5-dopetrope/tree/6796c779663b2797c7a411a776f5167b8b667dfc
+[ccbysa]: https://creativecommons.org/licenses/by-sa/3.0/fr/
