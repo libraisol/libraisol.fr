@@ -26,7 +26,7 @@ C'est un moment propice aux échanges pendant lequel vous pourrez vous initier a
 
 ### Comment nous soutenir ?
 Vous pouvez nous soutenir en adhérant à l'association.
-Le bulletin d'adhésion peut être apporté lors de nos permanences ou réunions (voir le pied de page) ou envoyé à notre adresse de contact (voir le mail dans le pied de page).
+Le [bulletin d'adhésion](../doc/bulletin-adhesion.pdf) peut être apporté lors de nos permanences ou réunions (voir le pied de page) ou envoyé à notre adresse de contact (voir le mail dans le pied de page).
 
 Que vous soyez un particulier ou une organisation, vous pouvez soutenir notre action en amenant les ordinateurs dont vous n'avez plus l'usage à la [Recyclerie][recyclerie] ou à notre local (voir l'adresse en pied de page).
 Nous invitons les entreprises, institutions, associations qui renouvellent leur parc informatique à nous contacter directement (voir le mail dans le pied de page).
