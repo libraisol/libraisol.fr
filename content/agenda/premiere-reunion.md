@@ -7,4 +7,4 @@ Lang: fr
 Authors: libraisol
 Summary: Première réunion publique
 
-Nous présentons nos principaux objectifs à nos adhérents.
+Nous présentons les principaux objectifs de notre association à nos adhérents.

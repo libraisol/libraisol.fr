@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% block title %}{{ article.title }} | {{ SITENAME }}{% endblock title %}
+
 {% block content %}
 						<!-- Content -->
 							<article class="box post">
@@ -23,4 +25,4 @@
                                     </a></li>
 								</ul>
                             </div>
-{% endblock %}
+{% endblock content %}
