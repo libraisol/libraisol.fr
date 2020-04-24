@@ -9,6 +9,26 @@
 						</section>
 {% endblock banner %}
 
+{% block modal %}
+                    <!-- Modal -->
+                    {% if MODAL_LINK and MODAL_TEXT and MODAL_LAB %}
+                        <section id="modal">
+                            <div class="cModal" id="modal1">
+                                <header>
+                                    <h2>Information importante</h2>
+                                </header>
+                                {{ MODAL_TEXT }}
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="{{ SITEURL }}/{{ MODAL_LINK }}" class="button large">{{ MODAL_LAB }}</a></li>
+                                        <li><a href="#modal1" class="button alt large">Non, merci</a></li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </section>
+                    {% endif %}
+{% endblock modal %}
+
 {% block intro %}
 					<!-- Intro -->
 						<section id="intro" class="container">

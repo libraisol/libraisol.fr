@@ -31,6 +31,7 @@
         {% endif %}
         
         <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="/theme/css/modal.css" />
     {% endblock head %}
 	</head>
 	<body class="homepage is-preload">
@@ -65,6 +66,9 @@
                         {% endif %}
 
 					{% block banner %}
+					{% endblock %}
+
+					{% block modal %}
 					{% endblock %}
 
 					{% block intro %}
@@ -228,6 +232,5 @@
 					</div>
 				</section>
 		</div>
-
 	</body>
 </html>
