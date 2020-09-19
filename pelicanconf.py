@@ -59,6 +59,6 @@ PARTNERS = (('Vichy Communauté', 'https://www.vichy-communaute.fr/'),
             ('L\'Étincelle', 'https://etincelle.io/'),
             ('Fondation Orange', 'https://www.fondationorange.com/'),)
 LOCALE = ('fr_FR.utf8', )
-MODAL_TEXT = 'Les communications autour de notre activité durant la crise sanitaire ont entraîné une certaine confusion autour de notre activité. Nous avons donc publié un communiqué de presse.'
-MODAL_LINK = 'communique-presse.html'
-MODAL_LAB = 'Lire le communiqué'
+#MODAL_TEXT = 'Les communications autour de notre activité durant la crise sanitaire ont entraîné une certaine confusion autour de notre activité. Nous avons donc publié un communiqué de presse.'
+#MODAL_LINK = 'communique-presse.html'
+#MODAL_LAB = 'Lire le communiqué'
