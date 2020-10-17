@@ -59,10 +59,10 @@ PARTNERS = (('Vichy Communauté', 'https://www.vichy-communaute.fr/'),
             ('L\'Étincelle', 'https://etincelle.io/'),
             ('Fondation Orange', 'https://www.fondationorange.com/'),)
 LOCALE = ('fr_FR.utf8', )
-MODAL_TEXT = """\
-Nous organisons le 17/10 de 15 h à 17 h, à l’Atrium de Vichy,
-un atelier d’installation du système libre GNU/Linux, afin de libérer vos
-machines de l’emprise des multinationales américaines.
-"""
-MODAL_LINK = 'install-party-17.html'
-MODAL_LAB = 'Inscription'
+#MODAL_TEXT = """\
+#Nous organisons le 17/10 de 15 h à 17 h, à l’Atrium de Vichy,
+#un atelier d’installation du système libre GNU/Linux, afin de libérer vos
+#machines de l’emprise des multinationales américaines.
+#"""
+#MODAL_LINK = 'install-party-17.html'
+#MODAL_LAB = 'Inscription'
