@@ -49,15 +49,18 @@ LIBRE_LAB = 'Découvrir le logiciel libre'
 SOLIDAIRE_LINK = 'pages/solidaire.html'
 SOLIDAIRE_LAB = 'Comment bénéficier d\'un ordinateur'
 ABOUT_LINK = 'pages/qui-sommes-nous.html'
-PERMANENCE = 'Tous les jeudis, de 15H à 16H (voir l\'adresse ci-dessous)'
+PERMANENCE = 'Le contexte de crise sanitaire actuelle et les décisions gouvernementales nous obligent à suspendre les permanences de l\'association. Pour nous contacter, veuillez nous envoyer un e-mail (voir adresse e-mail ci-dessous)'
 ADDRESS = 'Atrium<br/>37 avenue de Gramont<br/>03200 Vichy'
 MAIL = 'libraisol@zaclys.com'
 COPYRIGHT = 'Libraisol. Sauf mention contraire, le contenu est disponible sous licence <a href="https://creativecommons.org/licenses/by-sa/3.0/fr/" target="_blank">CC-BY-SA version 3.0 ou ultérieure</a>'
 CODE = '<i class="icon brands fa-gitlab" aria-hidden="true"></i> Hébergé sur <a href="https://framagit.org/libraisol/www.libraisol.fr" target="_blank">Framagit</a>'
 PARTNERS = (('Vichy Communauté', 'https://www.vichy-communaute.fr/'),
             ('La recyclerie', 'https://recycleriesiel.com/'),
-            ('L\'Étincelle', 'https://etincelle.io/'),
-            ('Fondation Orange', 'https://www.fondationorange.com/'),)
+            ('L\'Étincelle', 'https://etincelle-vichy.fr/'),
+            ('Fondation Orange', 'https://www.fondationorange.com/'),
+            ('Les resto du coeur Vichy', 'https://www.restosducoeur.org/centres-departementaux/ad03-centre-dactivites-vichy/'),
+            ('STEF', 'https://www.stef.com/'),
+            ('L\'Atrium', 'https://www.vichy-economie.com/atrium/'),)
 LOCALE = ('fr_FR.utf8', )
 #MODAL_TEXT = """\
 #Nous organisons le 17/10 de 15 h à 17 h, à l’Atrium de Vichy,
