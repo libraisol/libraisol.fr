@@ -106,3 +106,4 @@ venv.bak/
 # pelican
 output
 public
+/.project
